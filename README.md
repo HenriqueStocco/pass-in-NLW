@@ -2,8 +2,8 @@
 
 ## Sobre o projeto
 
-E uma aplicaçao de **gestão de participantes em eventos presenciais**. A ferramenta ira permitir que o organizador cadastre um evento e 
-abra uma pagina de inscriçao, e os participantes inscritos no evento podem emitir uma credencial para checkin no dia do 
+E uma aplicaçao de **gestão de participantes em eventos presenciais**. A ferramenta ira permitir que o organizador cadastre um evento e
+abra uma pagina de inscriçao, e os participantes inscritos no evento podem emitir uma credencial para checkin no dia do
 evento. O sistema fara um scan da credencial usando QRCode, permitindo a entrada do participante no evento.
 
 ## Requisitos
@@ -35,6 +35,7 @@ evento. O sistema fara um scan da credencial usando QRCode, permitindo a entrada
 - [x] O check-in no evento será realizado através de um QRCode;
 
 ## Tecnologias
+
 - **Node.js >= v20.10.0**
 - **NPM >= v10.2.5**
 - **Fastify >= v4.26.x**
@@ -78,7 +79,20 @@ project > git clone <esse_projeto>
 - Instalar as dependencias
 
 ```bash
-project/pass-in-NLW > npm i 
+project/pass-in-NLW > npm i
+```
+
+- Definir configuraçoes do TypeScript
+  Pesquisar pela versao do Node e colar no arquivo `tsconfig.json`: https://github.com/tsconfig/bases
+
+```bash
+project/pass-in-NLW > npx tsc --init
+```
+
+- Iniciar o prisma e definir o banco de dados
+
+```bash
+project/pass-in-NLW > npx prisma init --datasource-provider SQLite
 ```
 
 - Migrar as tebelas do banco de dados
@@ -86,8 +100,15 @@ project/pass-in-NLW > npm i
 ```bash
 project/pass-in-NLW > npm run db:migrate
 ```
+
 - Utilizar a aplicação
 
 ```bash
 project/pass-in-NLW > npm run dev
+```
+
+- Para ver os dados no banco de dados
+
+```bash
+project/pass-in-NLW > npm run db:studio
 ```
