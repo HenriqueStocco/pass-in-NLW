@@ -1,0 +1,32 @@
+POST http://0.0.0.0:3333/events
+Content-Type: application/json
+
+{
+  "title": "New event",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://0.0.0.0:3333/events/:eventId/attendees
+Content-Type: application/json
+
+{
+  "name": "Ryan Dahl",
+  "email": "example@example.com"
+}
+
+###
+
+GET http://0.0.0.0:3333/events/<:eventId>
+
+###
+
+GET http://0.0.0.0:3333/attendees/1/badge
+
+###
+GET http://0.0.0.0:3333/attendees/1/check-in
+
+###
+GET http://0.0.0.0:3333/events/<:eventId>/attendees?query=<name>
