@@ -57,7 +57,7 @@ Nessa aplicação utilizamos o banco de dados ralacional (SQL). Para o desenvolv
 
 ## Diagrama ER
 
-<img src="./.github/erd.svg">
+<img src="./.github/erd.svg" style="background-color: white">
 
 ## Como utilizar a aplicação
 
