@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "OM Theme (Night Owl Italic)"
+}
