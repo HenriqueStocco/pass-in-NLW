@@ -48,7 +48,7 @@ evento. O sistema fara um scan da credencial usando QRCode, permitindo a entrada
 
 **fastify-swagger >= v8.14.0**
 
-Para documentação da API.
+Para documentação da API. Acessar: http://localhost:3333/docs
 
 ## Banco de dados
 
